@@ -20,12 +20,12 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="345" placeholderIntrinsicHeight="257" translatesAutoresizingMaskIntoConstraints="NO" id="siW-iR-EUg">
-                        <rect key="frame" x="0.0" y="-80" width="345" height="417"/>
+                        <rect key="frame" x="0.0" y="-30" width="345" height="317"/>
                     </imageView>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="siW-iR-EUg" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" constant="160" id="0rF-Q0-YBj"/>
+                <constraint firstItem="siW-iR-EUg" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" constant="60" id="0rF-Q0-YBj"/>
                 <constraint firstItem="siW-iR-EUg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JWs-da-wqo"/>
                 <constraint firstItem="siW-iR-EUg" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="OQM-hr-UNA"/>
                 <constraint firstItem="siW-iR-EUg" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Owp-kX-RyO"/>
@@ -36,7 +36,7 @@
             <connections>
                 <outlet property="imageView" destination="siW-iR-EUg" id="sQW-bq-VCY"/>
             </connections>
-            <point key="canvasLocation" x="-227" y="-744"/>
+            <point key="canvasLocation" x="-248" y="-1021"/>
         </collectionViewCell>
     </objects>
 </document>

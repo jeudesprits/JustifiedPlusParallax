@@ -22,7 +22,7 @@ final class JustifiedPlusParallaxLayout: UICollectionViewLayout {
   var sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
   var minItemsInRow = 2
   var maxItemsInRow = 3
-  private var maxParallaxOffset: CGFloat = 80.0
+  private var maxParallaxOffset: CGFloat = 30.0
   
   private var totalHeight: CGFloat = 0.0
   
@@ -78,7 +78,7 @@ final class JustifiedPlusParallaxLayout: UICollectionViewLayout {
                 x: totalWidth,
                 y: totalHeight,
                 width: size.element.width,
-                height: size.element.height
+                height: size.element.height - 60.0
               )
               return attribute
             }(JustifiedPlusParallaxLayoutAttributes(forCellWith: indexPath)),
@@ -87,7 +87,7 @@ final class JustifiedPlusParallaxLayout: UICollectionViewLayout {
           
           totalWidth += size.element.width + lineSpacing
         }
-        totalHeight += sizes.first!.height + lineSpacing
+        totalHeight += sizes.first!.height + lineSpacing - 60.0
         indexPaths.removeAll()
         
         if nextIndex + 1 != numberOfItemsInRowCache.count {
@@ -142,8 +142,8 @@ final class JustifiedPlusParallaxLayout: UICollectionViewLayout {
     }
     
     let containerWidth = collectionView!.bounds.width
-      - (sectionInset.left + sectionInset.right)
-      - CGFloat(itemsImageSizes.count - 1) * lineSpacing,
+        - (sectionInset.left + sectionInset.right)
+        - CGFloat(itemsImageSizes.count - 1) * lineSpacing,
     preferredHeight = containerWidth * minItemHeight / allItemsWidth
     
     return itemsImageSizes.map {

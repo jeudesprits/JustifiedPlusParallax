@@ -128,8 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				550A824020E9489C002E60DD /* JustifiedPlusParallaxLayout.swift */,
-				550A824420E94A9D002E60DD /* JustifiedPlusParallaxLayoutDelegate.swift */,
 				550A824220E948B8002E60DD /* JustifiedPlusParallaxLayoutAttributes.swift */,
+				550A824420E94A9D002E60DD /* JustifiedPlusParallaxLayoutDelegate.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";

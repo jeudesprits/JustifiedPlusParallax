@@ -9,11 +9,11 @@
 import UIKit
 
 protocol JustifiedPlusParallaxLayoutDelegate: AnyObject {
+  
   func collectionView(
     _ collectionView: UICollectionView,
     layout justifiedPlusParallaxLayout: JustifiedPlusParallaxLayout,
     sizeForItemImageAt indexPath: IndexPath
   ) -> CGSize
-  
   
 }

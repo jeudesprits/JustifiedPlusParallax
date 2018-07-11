@@ -49,7 +49,6 @@ final class AsyncImageSizeParser {
   
   private lazy var session: URLSession = {
     let config = URLSessionConfiguration.default
-    config.httpMaximumConnectionsPerHost = 10
     return URLSession(configuration: config)
   }()
   

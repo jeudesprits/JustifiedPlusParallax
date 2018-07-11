@@ -12,14 +12,19 @@ final class JustifiedPlusParallaxLayoutAttributes: UICollectionViewLayoutAttribu
   
   var parallax: CGAffineTransform = .identity
   
+  // MARK: - Ovveride NSCopying methods
+  
   override func copy(with zone: NSZone?) -> Any {
-    guard let attributes = super.copy(with: zone) as? JustifiedPlusParallaxLayoutAttributes else { return super.copy(with: zone) }
+    let attributes = super.copy(with: zone) as! JustifiedPlusParallaxLayoutAttributes
     attributes.parallax = parallax
     return attributes
   }
   
+  
+  // MARK: - Ovveride NSObjectProtocol methods
+  
   override func isEqual(_ object: Any?) -> Bool {
-    guard let attributes = object as? JustifiedPlusParallaxLayoutAttributes else { return false }
+    let attributes = object as! JustifiedPlusParallaxLayoutAttributes
     guard NSValue(cgAffineTransform: attributes.parallax) == NSValue(cgAffineTransform: parallax) else { return false }
     return super.isEqual(object)
   }
